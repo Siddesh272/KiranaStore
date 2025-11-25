@@ -1,0 +1,118 @@
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+	;
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #fdda49;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	color: #000;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.form-container {
+	background-color: #fff;
+	padding: 0px 40px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	width: 400px;
+	animation: fadeIn 1s ease-in-out;
+}
+
+@
+keyframes fadeIn {from { opacity:0;
+	transform: translateY(-20px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+}
+h2 {
+	text-align: center;
+	color: #000;
+	margin-bottom: 10px;
+	font-size: 28px;
+	font-weight: 700;
+	
+	& span {
+		color:green;
+	}
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	color: #ff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.form-group input, .form-group textarea {
+	width: 90%;
+	padding: 12px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	transition: border-color 0.3s;
+	font-size: 16px;
+	background-color: #f9f9f9;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+	border-color: #ff7043;
+	outline: none;
+	background-color: #e8f5e9;
+}
+
+.form-group textarea {
+	resize: vertical;
+}
+
+.form-group input[type="submit"] {
+	background-color: #45a049;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 12px 20px;
+	font-size: 18px;
+	border-radius: 8px;
+	transition: background-color 0.3s;
+	font-weight: 700;
+}
+
+.form-group input[type="submit"]:hover {
+	 background-color:#45a049;
+    transform:scale(1.05);
+}
+
+.error {
+	color: #d32f2f;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.success {
+	color: #388e3c;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 700;
+}

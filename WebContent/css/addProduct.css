@@ -1,0 +1,104 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.navbar {
+	width: 100%;
+	padding: 10px 0px;
+	background-color: #fdda47;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: #F2CF44;
+	color: green;
+}
+
+.container {
+	margin-top: 60px; /* To account for the fixed navbar height */
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+form {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 400px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="file"] {
+	width: calc(100% - 20px);
+	padding: 10px;
+	border-radius: 15px; /* Curvier border */
+	background-color: #fff;
+	border: 1px solid #ccc; /* Slightly darker border */
+	outline: none;
+}
+
+input[type="text"]::placeholder, input[type="number"]::placeholder {
+	color: grey;
+}
+
+input[type="text"]:focus::placeholder, input[type="number"]:focus::placeholder
+	{
+	color: transparent; /* Hide placeholder on focus */
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #4cae4c;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}

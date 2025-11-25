@@ -1,0 +1,150 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+	;
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #fdda47;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	color: #000;
+}
+
+.login-container {
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	width: 400px; /* Adjusted width to fit typical login form */
+	animation: fadeIn 1s ease-in-out;
+	padding-right: 60px;
+}
+
+@
+keyframes fadeIn {from { opacity:0;
+	transform: translateY(-20px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+}
+h2 {
+	text-align: center;
+	color: #000;
+	margin-bottom: 20px;
+	font-size: 28px;
+	font-weight: 700;
+	&
+	span
+	{
+	color
+	:
+	green;
+}
+
+}
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	color: #ff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 12px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	transition: border-color 0.3s;
+	font-size: 16px;
+	background-color: #f9f9f9;
+}
+
+.form-group input:focus {
+	border-color: green;
+	outline: none;
+	background-color: #fff;
+}
+
+
+button {
+	background-color: #ff7043;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 12px 20px;
+	font-size: 18px;
+	border-radius: 8px;
+	transition: background-color 0.3s;
+	font-weight: 700;
+	width: 100%;
+}
+
+button:hover {
+	background-color: green;
+}
+
+.error-message {
+	color: #d32f2f;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+p {
+	margin-top: 15px;
+	text-align: center;
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.login-button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 35%;
+	cursor: pointer;
+	border-radius: 12px;
+	transition: background-color 0.3s, transform 0.3s;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-button:hover {
+	background-color: #45a049;
+	transform: scale(1.05);
+}
+
+.login-button:active {
+	background-color: #3e8e41;
+	transform: scale(1);
+}
+
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}

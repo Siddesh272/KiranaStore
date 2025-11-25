@@ -1,0 +1,64 @@
+@CHARSET "ISO-8859-1";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #fdda47;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	color: #000;
+}
+
+.logout-container {
+	background-color: #ffffff;
+	padding: 40px;
+	border-radius: 20px;
+	border: 2px solid #388e3c; /* Dark green border */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	animation: fadeIn 1s ease-in-out;
+	position: relative;
+	overflow: hidden; /* To keep the shape effects contained */
+}
+
+@keyframes fadeIn {from { opacity:0;
+	transform: translateY(-20px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+}
+h2 {
+	color: #4caf50; /* Green color for success message */
+	margin-bottom: 20px;
+	font-size: 28px;
+	font-weight: 900; /* Bold text */
+}
+
+p {
+	font-size: 18px;
+	color: #333; /* Darker color for contrast */
+	margin-top: 15px;
+}
+
+/* Add abstract shapes for a modern touch */
+a {
+	color: #007bff;
+	text-decoration: none;
+	font-weight: 700;
+	display: inline-block;
+	margin-top: 20px; /* Added margin for spacing */
+}
+
+a:hover {
+	text-decoration: underline;
+}

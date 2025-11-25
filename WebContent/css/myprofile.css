@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	 background: #fff;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+	background-color: #fdda47;
+	color: #fff;
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.logo a {
+	color: #000;
+	font-size: 24px;
+	font-weight: 700;
+	text-decoration: none;
+	
+	& span{
+		color:green;
+	}
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin: 0 15px;
+}
+
+nav ul li a {
+	color: #000;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+nav ul li a:hover {
+	color:green;
+}
+
+#search {
+	border-radius: 15px;
+	background-color: #d3d3d3;
+	border: 1px solid #ccc;
+	padding: 10px;
+	outline: none;
+}
+
+.user-info {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#userName {
+	margin-left: 1rem;
+}
+
+main {
+	padding: 80px 20px 20px;
+	/* Adjust padding to avoid content under the fixed header */
+	text-align: center;
+}
+
+.profile-container {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 300px;
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	width: 100%;
+	padding: 8px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+textarea {
+	resize: none;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+button:first-child {
+	background-color: #f0ad4e;
+	color: #fff;
+}
+
+button:last-child {
+	background-color: #5cb85c;
+	color: #fff;
+}

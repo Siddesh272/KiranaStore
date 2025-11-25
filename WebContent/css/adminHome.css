@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #ffda47;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display:flex;
+    justify-content:center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover{
+	background: #F2CF44;
+	color:green;
+}
+
+.container {
+    margin-top: 60px; /* To account for the fixed navbar height */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: green;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,156 @@
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+}
+
+header {
+	background-color: #fdda47;
+	color: #fff;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.logo a {
+	color: #000;
+	font-size: 30px;
+	font-weight: 700;
+	text-decoration: none;
+	& span{color:green;}
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin: 0 15px;
+}
+
+nav ul li a {
+	color: #000;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+nav ul li a:hover {
+	color: green;
+}
+
+#search {
+	border-radius: 15px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+	outline: none;
+}
+
+#search:focus {
+	border: 2px solid green;
+}
+
+.user-info {
+	color: #000; display : flex;
+	font-size: 20px;
+	font-weight: 500;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+
+main {
+	padding: 80px 20px 20px;
+	/* Adjust padding to avoid content under the fixed header */
+	text-align: center;
+}
+
+h1 {
+	color: green;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+.card {
+	width: 20%;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	background-color:#fff;
+}
+
+.card img {
+	width: 100%;
+	height: 225px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+.card h3 {
+	margin-bottom: 5px;
+}
+
+.card p {
+	margin-bottom: 10px;
+}
+
+.card button {
+	background-color: white;
+	color: green;
+	padding: 10px 20px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.card button:hover {
+	background-color: green;
+	color: white;
+}
+
+.price_and_add {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#userName {
+	margin-left: 0.5rem;
+}
+
+#hidden {
+	width: 0px;
+	margin: 0px;
+	padding: 0px;
+}
