@@ -23,17 +23,24 @@ body {
 	padding-right: 60px;
 }
 
-@
-keyframes fadeIn {from { opacity:0;
-	transform: translateY(-20px);
-}
+@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
 
 to {
 	opacity: 1;
 	transform: translateY(0);
 }
 
-}
+
 h2 {
 	text-align: center;
 	color: #000;
@@ -53,13 +60,15 @@ h2 {
 	margin-bottom: 20px;
 }
 
-.form-group label {
-	display: block;
-	margin-bottom: 8px;
-	color: #ff;
-	font-weight: 700;
-	font-size: 16px;
-}
+ .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            /* Changed color from #ff (invalid) to a standard dark color */
+            color: #333; 
+            font-weight: 700;
+            font-size: 16px;
+        }
+
 
 .form-group input {
 	width: 100%;

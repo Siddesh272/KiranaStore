@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/index.css">
-<title>Customer Registration - GrocerEaser</title>
+<title>Customer Registration - Kirana Store</title>
 
 <script>
 	function checkFormat() {
@@ -75,26 +75,27 @@
 	<div class="container">
 		<div class="form-container">
 			<h2>Customer Registration</h2>
+			<!-- Assuming checkFormat() function exists in a <script> block or is handled by the framework -->
 			<form id="registrationForm" name="registrationForm" method="post" onsubmit="return checkFormat()" action="registrationSuccessful.jsp">
 				<div class="form-group">
-					<label for="customerName">Customer Name:</label> <input type="text"
-						id="customerName" name="customerName" maxlength="50">
+					<label for="customerName">Customer Name:</label> 
+					<input type="text" id="customerName" name="customerName" maxlength="50">
 					<div class="error" id="nameError"></div>
 				</div>
 				<div class="form-group">
-					<label for="email">Email:</label> <input type="text" id="email"
-						name="email">
+					<label for="email">Email:</label> 
+					<input type="text" id="email" name="email">
 					<div class="error" id="emailError"></div>
 				</div>
 				<div class="form-group">
-					<label for="password">Password:</label> <input type="password"
-						id="password" name="password" maxlength="30">
+					<label for="password">Password:</label> 
+					<input type="password" id="password" name="password" maxlength="30">
 					<div class="error" id="passwordError"></div>
 				</div>
 				
 				<div class="form-group">
-					<label for="password">Confirm Password:</label> <input type="text"
-						id="confirm-password" name="confirm-password" maxlength="30">
+					<label for="confirm-password">Confirm Password:</label> 
+					<input type="password" id="confirm-password" name="confirm-password" maxlength="30">
 					<div class="error" id="confirmPasswordError"></div>
 				</div>
 				
@@ -104,16 +105,17 @@
 					<div class="error" id="addressError"></div>
 				</div>
 				<div class="form-group">
-					<label for="contactNumber">Contact Number:</label> <input
-						type="text" id="contactNumber" name="contactNumber" maxlength="10">
+					<label for="contactNumber">Contact Number:</label> 
+					<input type="text" id="contactNumber" name="contactNumber" maxlength="10">
 					<div class="error" id="contactNumberError"></div>
 				</div>
 				<div class="form-group">
 					<input type="submit" value="Register" name="Register">
 				</div>
+				<!-- Added type="password" to confirm-password for security -->
 				<input type="hidden" name="customerId" id="cId">
-				<p>Already User? <a href="LoginPage.jsp">Login</a></p>
 			</form>
+			<p>Already User? <a href="LoginPage.jsp">Login</a></p>
 			<div id="successMessage" class="success"></div>
 		</div>
 	</div>
