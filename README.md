@@ -171,6 +171,9 @@ Pull requests are welcome!
 For major changes, open an issue first to discuss what you would like to improve.
 
 ---
+## 📌 UI Demo
+
+![KiranaStore UI Preview](https://github.com/Siddesh272/KiranaStore/blob/main/ezgif.com-optimize.gif)
 
 
 
